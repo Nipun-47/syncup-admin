@@ -32,9 +32,9 @@ export default function ResetPassword() {
             await new Promise(resolve => setTimeout(resolve, 1500));
             setIsEmailSent(true);
 
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+       
 
-        } catch (_) {
+        } catch {
             setError("An error occurred. Please try again later.");
         } finally {
             setIsSubmitting(false);
