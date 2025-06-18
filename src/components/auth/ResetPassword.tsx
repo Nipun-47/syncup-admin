@@ -31,6 +31,9 @@ export default function ResetPassword() {
             // Simulate API call with timeout
             await new Promise(resolve => setTimeout(resolve, 1500));
             setIsEmailSent(true);
+
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
         } catch (_) {
             setError("An error occurred. Please try again later.");
         } finally {

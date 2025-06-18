@@ -48,6 +48,9 @@ export async function POST(request: NextRequest) {
         });
 
         return response;
+
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
     } catch (_) {
         return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
     }
